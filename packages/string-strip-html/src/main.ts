@@ -1319,7 +1319,7 @@ function stripHtml(str: string, opts?: Partial<Opts>): Res {
         );
       // 2. extract the full name string
       /* c8 ignore next */
-      tag.name = str.slice(
+      tag.name = str.toLowerCase().slice(
         tag.nameStarts,
         tag.nameEnds +
           /* c8 ignore next */
